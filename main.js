@@ -5,11 +5,6 @@ const hearts = document.querySelectorAll("footer > ul > li > span");
 const modal = document.querySelector("div#modal");
 const modalMessage = document.querySelector("div#modal > p#modal-message");
 
-// hide modal when page first loads
-document.addEventListener("DOMContentLoaded", () => {
-  modal.classList.toggle("hidden");
-});
-
 // add eventListener to each heart node
 [...hearts].forEach((heart) =>
   heart.addEventListener("click", (e) => {
